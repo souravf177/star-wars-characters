@@ -5,7 +5,7 @@ import CorsFilter from "./filters/CorsFilter.js";
 import ChracterRoute from "./routes/CharacterRoute.js";
 
 const app = express();
-const port = process.env.SERVER_PORT || 8000;
+const port = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

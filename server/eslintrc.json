@@ -1,0 +1,37 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "jest", "testing-library", "jest-dom"],
+  "env": {
+    "jest/globals": true,
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "import/prefer-default-export": ["off"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "testing-library/await-async-query": "warn",
+    "testing-library/await-async-utils": "warn",
+    "testing-library/no-await-sync-query": "warn",
+    "testing-library/no-manual-cleanup": "warn",
+    "testing-library/no-wait-for-empty-callback": "warn",
+    "testing-library/prefer-explicit-assert": "warn",
+    "testing-library/prefer-presence-queries": "warn",
+    "testing-library/prefer-screen-queries": "warn",
+    "testing-library/prefer-wait-for": "warn",
+    "jest-dom/prefer-checked": "warn",
+    "jest-dom/prefer-empty": "warn",
+    "jest-dom/prefer-enabled-disabled": "warn",
+    "jest-dom/prefer-focus": "warn",
+    "jest-dom/prefer-required": "warn",
+    "jest-dom/prefer-to-have-attribute": "warn",
+    "jest-dom/prefer-to-have-text-content": "warn",
+    "no-param-reassign": "warn"
+  }
+}
